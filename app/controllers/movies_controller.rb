@@ -16,6 +16,7 @@ class MoviesController < ApplicationController
     if @selected_ratings == nil
       @selected_ratings = Hash[@all_ratings.map{|rating| [rating]}]
     end
+    #@all_ratings = @selected_ratings
 
     element = params[:sort] || session[:sort]
 
